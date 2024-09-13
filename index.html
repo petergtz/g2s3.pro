@@ -10,11 +10,25 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <style>
         body {
-            background-color: #f5f5f5;
+            /*background-color: #b9e2a1;*/
+            background-color: #eeeeee;
+            /*background-image: url('bg.jpg'); !* Replace with your image path *!*/
+            /*background-size: cover;*/
+            /*background-position: center;*/
+            /*background-repeat: no-repeat;*/
+        }
+
+        .blur-image {
+            /*filter: blur(50px); !* Adjust the value to increase or decrease the blur effect *!*/
         }
 
         .container {
-            margin-top: 5%;
+            /*margin-top: 0%;*/
+        }
+
+        .explanation-paragraph {
+            margin-top: 3rem; /* Adjust this value to increase the space before the paragraph */
+            margin-bottom: 3rem; /* Adjust this value to increase the space after the paragraph */
         }
 
         .box {
@@ -38,37 +52,121 @@
             font-size: 1.2rem;
             margin-top: 1rem;
         }
-    </style>
+
+        .content-left-align .title, .content-left-align .subtitle {
+            text-align: left;
+            line-height: 1.8; /* Adjust this value as needed */
+            /*width: ;*/
+        }
+
+        .white-background {
+            background-color: white;
+            padding: 1rem;
+            /*border-radius: 10px;*/
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+        }
+
+        .fold {
+            /*background-image: url('g2s3.png'); !* Replace with your image path *!*/
+            /*background-size: cover;*/
+            /*background-position: center;*/
+            /*background-repeat: no-repeat;*/
+            background-color: #282828;
+            padding: 4rem;
+            /*border-radius: 20px;*/
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            /*box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);*/
+            color: #ffffff;
+        }
+
+/* CSS */
+.gradient-text {
+    background: linear-gradient(to left, #e69067, #02023f, #8133b5, #efc33a); /* Adjust the colors as needed */
+    -webkit-background-clip: text;
+    color: transparent;
+}
+        /* CSS */
+        .footer-section {
+            padding: 2rem 0; /* Adjust the padding to make the footer narrow */
+            background-color: #282828; /* Fallback color in case the image doesn't load */
+        }
+        </style>
 </head>
 
 <body>
-<section class="section">
+
+<section class="section"  style="background-image: url('boliviainteligente-875IJwLJa9c-unsplash.jpg'); background-size: cover">
     <div class="container">
         <div class="columns is-centered">
-            <div class="column is-half">
-                <div class="box" id="form-box">
-                    <h1 class="title">Join the Waitlist</h1>
-                    <h2 class="subtitle">Be the first to know when we launch!</h2>
+            <div class="column is-three-quarters">
+                <div class="box">
+                    <div class="columns is-align-items-center">
+                        <div class="column is-half is-flex is-justify-content-center">
+                            <img src="logo2.png" alt="G2S3 Image" style="height: 300px; width: auto;">
+                        </div>
+                        <div class="column is-half">
+                            <div class="box" id="form-box">
+                                <h1 class="title">Join the G2S3 Pro waitlist</h1>
+                                <h2 class="subtitle">Be the first to know when we launch!</h2>
 
-                    <form id="waitlist-form">
-                        <div class="field">
-                            <label class="label" for="email">Email</label>
-                            <div class="control">
-                                <input class="input" type="email" id="email" name="email" placeholder="Enter your email" required>
+                                <form id="waitlist-form">
+                                    <div class="field">
+                                        <label class="label" for="email">Email</label>
+                                        <div class="control">
+                                            <input class="input" type="email" id="email" name="email" placeholder="Enter your email" required>
+                                        </div>
+                                    </div>
+
+                                    <div class="field">
+                                        <div class="control">
+                                            <button type="submit" class="button is-primary" style="background-color: #b54c91">Sign Up</button>
+                                        </div>
+                                    </div>
+                                </form>
+
+                                <p id="success-message" style="display:none;">Thank you for signing up!</p>
                             </div>
                         </div>
-
-                        <div class="field">
-                            <div class="control">
-                                <button type="submit" class="button is-primary">Sign Up</button>
-                            </div>
-                        </div>
-                    </form>
-
-                    <p id="success-message" style="display:none;">Thank you for signing up!</p>
+                    </div>
                 </div>
             </div>
         </div>
+    </div>
+</section>
+<section class="section white-background">
+    <div class="container" style="width: 80%">
+        <div class="columns is-centered content-left-align">
+                <p class="subtitle explanation-paragraph" style="text-align: left; color: #444444">
+                    Do you have a Google account with important data? Like family pictures in <b>Google Photos</b>, important documents in <b>Google Drive</b>, archived emails in <b>GMail</b>? Do you want to limit the blast radius of a potential Google account lockout? Then G2S3 Pro is for you. G2S3 Pro backs up your data from Google Drive to Amazon S3. It is a simple, easy-to-use, and secure solution that can be set up in minutes. Combined with Google Takeout, G2S3 Pro can take care of all of your precious data in your Google account.
+                </p>
+        </div>
+        <div class="columns is-centered">
+            <div class="column is-three-quarters fold content-left-align">
+                <h1 class="title gradient-text">Frequently Asked Questions</h1>
+                <p class="subtitle" style="color: lightgray">
+                    <b>Is my data in my Google account not secure?</b><br>
+                    Google has a good track record of keeping your data secure. However, there is a risk of being locked out of your account and you lose access to your data.
+                </p>
+                <p class="subtitle" style="color: lightgray">
+                    <b>Why would I be locked out of my Google account?</b><br>
+                    TBD. Add links to articles here.
+                </p>
+                <p class="subtitle" style="color: lightgray">
+                    <b>How does G2S3 Pro work?</b><br>
+                    G2S3 uses Google Takeout to export your data from Google Drive. It then uploads the data to Amazon S3. You can schedule G2S3 Pro to run periodically to keep your backup up-to-date.
+                </p>
+                <p class="subtitle" style="color: lightgray">
+                    <b>How much will G2S3 Pro cost?</b><br>
+                    G2S3 Pro will be free for up to 15GB and the first 12 months. After that, it will cost 1 EUR/month for 15GB, 2 EUR/month for 1TB, and 4 EUR/month for 2TB. We will also offer yearly plans.
+                </p>
+            </div>
+        </div>    </div>
+</section>
+<!-- HTML -->
+<section class="section footer-section" style="background-image: url('boliviainteligente-875IJwLJa9c-unsplash.jpg'); background-size: cover;">
+    <div class="container">
+        <h1 class="title" style="color: white; text-align: center;">Who is behind this</h1>
     </div>
 </section>
 
