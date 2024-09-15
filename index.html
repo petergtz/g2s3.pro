@@ -9,12 +9,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <style>
         body {
-            /*background-color: #b9e2a1;*/
             background-color: #eeeeee;
-            /*background-image: url('bg.jpg'); !* Replace with your image path *!*/
-            /*background-size: cover;*/
-            /*background-position: center;*/
-            /*background-repeat: no-repeat;*/
         }
 
         .explanation-paragraph {
@@ -23,14 +18,22 @@
         }
 
         .box {
-            border-radius: 10px;
-            padding: 2rem;
+            border-radius: 8px;
+            padding: 1.5rem;
             background-color: white;
-            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
         }
 
         .title, .subtitle {
             text-align: center;
+        }
+
+        .title {
+            font-size: 1.5rem;
+        }
+
+        .subtitle {
+            font-size: 0.9375rem;
         }
 
         .button.is-primary {
@@ -40,8 +43,8 @@
         #success-message {
             text-align: center;
             color: green;
-            font-size: 1.2rem;
-            margin-top: 1rem;
+            font-size: 0.9rem;
+            margin-top: .75rem;
         }
 
         .content-left-align .title, .subtitle {
@@ -84,30 +87,30 @@
          style="background-image: url('boliviainteligente-875IJwLJa9c-unsplash.jpg'); background-size: cover">
     <div class="container">
         <div class="columns is-centered">
-            <div class="column is-three-quarters">
+            <div class="column is-half">
                 <div class="box">
                     <div class="columns is-align-items-center">
-                        <div class="column is-half is-flex is-justify-content-center">
-                            <img src="logo2.png" alt="G2S3 Image" style="height: 300px; width: auto;">
+                        <div class="column is-flex is-justify-content-center">
+                            <img src="logo2.png" alt="G2S3 Image" style="height: 225px; width: auto;">
                         </div>
-                        <div class="column is-half">
+                        <div class="column is-three-fifths">
                             <div class="box" id="form-box">
                                 <h1 class="title">Join the G2S3 Pro waitlist</h1>
                                 <h2 class="subtitle" style="text-align: center">Be the first to know when we launch!</h2>
 
                                 <form id="waitlist-form">
                                     <div class="field">
-                                        <label class="label" for="email">Email</label>
+                                        <label class="label" for="email" style="font-size: 0.75em">Email</label>
                                         <div class="control">
                                             <input class="input" type="email" id="email" name="email"
-                                                   placeholder="Enter your email" required>
+                                                   placeholder="Enter your email" required style="font-size: 0.75em">
                                         </div>
                                     </div>
 
                                     <div class="field">
                                         <div class="control">
                                             <button type="submit" class="button is-primary"
-                                                    style="background-color: #b54c91">Sign Up
+                                                    style="background-color: #b54c91; font-size: 0.75em">Sign Up
                                             </button>
                                         </div>
                                     </div>
@@ -140,7 +143,7 @@
                 <p class="subtitle" style="color: lightgray">
                     <b>Is my data in my Google account not secure?</b><br>
                     Google has a good track record of keeping your data secure. However, there is a risk of being locked
-                    out of your account and you lose access to your data.
+                    out of your account, and you lose access to your data.
                 </p>
                 <p class="subtitle" style="color: lightgray">
                     <b>Why would I be locked out of my Google account?</b><br>
@@ -151,7 +154,7 @@
                     No, G2S3 Pro does not help you to get your account back. However, it helps you to limit the blast radius of a potential lockout. You can still access your data in Amazon S3. You can also use the data to create a new Google account and import the data.
                 <p class="subtitle" style="color: lightgray">
                     <b>How does G2S3 Pro work?</b><br>
-                    G2S3 Pro regularly scans your Google Drive for changes and copies them over to Amazon S3. To back your Google Photos and other Google data, we will leverage Google Takeout. Takeout exports your data into Google Drive, where G2S3 Pro can conveniently pick it up. We will provide smart options to handle the takeouts appropriately.
+                    G2S3 Pro regularly scans your Google Drive for changes and copies them over to Amazon S3. To back your Google Photos and other Google data, we will leverage Google Takeout. Takeout exports your data into Google Drive, where G2S3 Pro can conveniently pick it up. We will provide smart options to handle the takeouts appropriately. See the blog post <a href="https://betterprogramming.pub/backing-up-google-photos-to-amazon-s3-221e42a32a95">Backing Up Google Photos to Amazon S3</a> for an indepth discussion on how this works.
                 </p>
                 <p class="subtitle" style="color: lightgray">
                     <b>How much will G2S3 Pro cost?</b><br>
@@ -166,7 +169,7 @@
 <section class="section footer-section"
          style="background-image: url('boliviainteligente-875IJwLJa9c-unsplash.jpg'); background-size: cover;">
     <div class="container">
-        <h1 class="title" style="color: white; text-align: center;">Who is behind this</h1>
+        <h1 class="subtitle" style="color: white; text-align: center;"><a href="https://petergoetz.dev/" style="color: white">Contact</a> | <a href="https://betterprogramming.pub/backing-up-google-photos-to-amazon-s3-221e42a32a95" style="color: white">Blog Post</a> | © 2024 Peter Götz</h1>
     </div>
 </section>
 
